@@ -1,3 +1,4 @@
+// This is functional based components
 function Hello() {
   return (
     <div>
