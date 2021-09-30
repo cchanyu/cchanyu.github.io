@@ -1,9 +1,9 @@
+import React from 'react'
+
 // This is functional based components
-function Hello() {
+function Hello(props) {
   return (
-    <div>
-        We hacking on React!
-    </div>
+    <div>{`Hello! It's ${props.date}`}</div>
   );
 }
 

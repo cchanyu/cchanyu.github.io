@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Hello />
-        <Message />
+        <Hello date={"9/29/21"} />
+        <Message content={"Passing data from props"} sender={"Cam"}/>
       </header>
     </div>
   );
