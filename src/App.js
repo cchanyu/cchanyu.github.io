@@ -1,10 +1,12 @@
 import './App.css';
-import TaskContainer from './components/TaskContainer';
+import Tile from './components/Tile'
 
 function App() {
   return (
     <div className="App">
-      <TaskContainer />
+      <div className="App-header">
+        <Tile />
+      </div>
     </div>
   );
 }
