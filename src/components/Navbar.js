@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/HomeScreen.css'
+import '../css/Navbar.css'
 
-class HomeScreen extends React.Component {
+class Navbar extends React.Component {
     constructor(){
         super()
         this.state={}
@@ -10,12 +10,12 @@ class HomeScreen extends React.Component {
     render(){
         return(
             <div>
-
-                HomeScreenEDIT
+                <div className="timer"></div>
+                Navbar
             </div>
         )
     }
 
 }
 
-export default HomeScreen;
+export default Navbar;
