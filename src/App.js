@@ -6,35 +6,38 @@ import ContactMe from './components/ContactMe.js';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import { Routes, Route, Link} from 'react-router-dom'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-        <Navbar />
+      <Navbar className="navbar" />
+      <div className="invisNavbar" />
 
-        {/* React Route */}
-        <Routes>
-          <Route exact path="/" element={<HomeScreen />}/>
+      {/* React Route */}
+      <Routes className="route">
+        <Route exact path="/" element={<HomeScreen />}/>
 
-          <Route path="about" element={<AboutMe />}/>
-          
-          <Route path="projects" element={<Projects />}/>
+        <Route path="about" element={<AboutMe />}/>
+        
+        <Route path="projects" element={<Projects />}/>
 
-          <Route path="contact" element={<ContactMe />}/>
-        </Routes>
+        <Route path="contact" element={<ContactMe />}/>
+      </Routes>
 
-        {/* Navigation */}
-        <nav>
-          <Link to="/">HomeScreen</Link>
+      {/* Navigation */}
+      <nav className="nav">
+        <Link to="/">HomeScreen</Link>
 
-          <Link to="/about">AboutMe</Link>
+        <Link to="/about">AboutMe</Link>
 
-          <Link to="/projects">Projects</Link>
-          
-          <Link to="/contact">ContactMe</Link>
-        </nav>
+        <Link to="/projects">Projects</Link>
 
-        <Footer />
+        <Link to="/contact">ContactMe</Link>
+      </nav>
+
+      <Footer />
+      <div className="invisFooter" />
     </div>
   );
 }

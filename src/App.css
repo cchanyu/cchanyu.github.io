@@ -1,6 +1,19 @@
 .App {
-  display: flex;
   text-align: center;
-  outline: 10px black solid;
-  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.invisNavbar {
+  height: 12vh;
+}
+
+.invisFooter {
+  height: 10vh;
+}
+
+.nav {
+  border: 1px black solid;
+  height: 10vh;
 }

@@ -1,3 +1,17 @@
 .navbar {
+    position: absolute;
+    top: 0;
     text-align: center;
+    border: black 1px solid;
+    width: 100vw;
+    height: 12vh;
+}
+
+.navbar--inside {
+    margin: 15px;
+    padding: 10px;
+}
+
+.clock {
+
 }

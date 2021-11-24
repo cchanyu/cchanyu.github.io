@@ -9,9 +9,14 @@ class Navbar extends React.Component {
 
     render(){
         return(
-            <div>
-                <div className="timer"></div>
-                Navbar
+            <div className="navbar">
+                <div className="navbar--inside">
+                    <div className="user"></div>
+                    <div className="clock"></div>
+                    <div className="wifi"></div>
+                    <div className="battery"></div>
+                    Navbar
+                </div>
             </div>
         )
     }

@@ -4,9 +4,11 @@
     bottom: 0;
     border: black 1px solid;
     width: 100vw;
-
+    height: 10vh;
 }
 
 .footer--inside {
-    
+    margin: 15px;
+    padding: 10px;
+    border-top: black 1px solid;
 }

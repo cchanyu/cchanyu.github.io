@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="about">
                 AboutMe
             </div>
         )

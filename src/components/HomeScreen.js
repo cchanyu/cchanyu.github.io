@@ -9,9 +9,8 @@ class HomeScreen extends React.Component {
 
     render(){
         return(
-            <div>
-
-                HomeScreenEDIT
+            <div className="hs">
+                HomeScreenEDIT2
             </div>
         )
     }
