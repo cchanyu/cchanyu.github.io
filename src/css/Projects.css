@@ -1,4 +1,9 @@
 .project {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    overflow: hidden;
+    position: relative;
     height: 68vh;
+    width: 100vw + 50vw;
 }

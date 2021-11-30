@@ -8,7 +8,36 @@
 }
 
 .footer--inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px;
     padding: 10px;
-    border-top: white 3px solid;
+    border-top: white 2px solid;
+}
+
+.gamepad:hover, .footer--inside--right:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+.footer--inside--right {
+    display: flex;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.text {
+    padding: 0 20px 0 10px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }

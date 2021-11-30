@@ -1,0 +1,12 @@
+.projectPad{
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    border: thin solid #339FB7;
+    align-items: center;
+    
+    margin: 10px;
+    box-shadow: 2px 2px 2px #339FB7;
+}

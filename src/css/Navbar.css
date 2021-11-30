@@ -20,7 +20,12 @@
     display: flex;
 }
 
-.wifi, .user, .battery, .clock {
+.user:hover {
+    transition: transform .2s;
+    transform: scale(1.2);
+}
+
+.icon, .clock {
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -29,12 +34,13 @@
 }
 
 .clock {
+    font-weight: bold;
     font-size: 18px;
     width: 100px;
 }
 
 .user {
-    padding: 3px;
+    padding: 3px !important;
     margin-top: 5px;
     border: 3px solid white;
     border-radius: 50%;
