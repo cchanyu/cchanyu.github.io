@@ -17,7 +17,7 @@ class Footer extends React.Component {
                         <img className="gamepad icon" src={GamePad} alt="gamepad" />
                     </div>
                     <div className="footer--inside--right">
-                        <img className="times icon" src={Times} alt="times" />
+                        <img className="times icon2" src={Times} alt="times" />
                         <div className="text">Select</div>
                     </div>
                 </div>

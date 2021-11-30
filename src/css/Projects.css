@@ -4,6 +4,8 @@
     text-align: center;
     overflow: hidden;
     position: relative;
+    justify-content: center;
+    align-items: center;
+
     height: 68vh;
-    width: 100vw + 50vw;
 }

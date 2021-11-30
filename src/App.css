@@ -2,7 +2,9 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100vh;
+  width: 100vw;
+  font: white;
   background-color: #3b3b3b;
 }
 
@@ -15,13 +17,33 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: center;
   height: 10vh;
 }
 
-.nav-ul {
-  display: flex;
+.icon {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.icon:hover {
+  transition: transform .2s;
+  transform: scale(1.2);
+}
+
+.icon:hover + .hstext {
+  display: block;
+}
+
+.hstext {
+  display: none;
+  margin: 0 10px 0 10px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
 }

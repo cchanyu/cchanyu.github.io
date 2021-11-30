@@ -4,9 +4,9 @@
     width: 600px;
     height: 300px;
     border-radius: 20px;
-    border: thin solid #339FB7;
+    border: thin solid white;
     align-items: center;
     
     margin: 10px;
-    box-shadow: 2px 2px 2px #339FB7;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
 }

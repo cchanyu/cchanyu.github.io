@@ -9,7 +9,7 @@ class ContactMe extends React.Component {
 
     render(){
         return(
-            <div className="contact">
+            <div className="contact3">
                 ContactMe
             </div>
         )
