@@ -3,8 +3,8 @@
     [
         {
             "id": 1,
-            "name": "BDO RNG Enhancement Simulator",
-            "description": "Replica of my favorite video game called Black Desert Online. I reverse engineered and traced back their formula to create a simulation of their item enhancement system.",
+            "name": "Self Introduction",
+            "description": "My name is Chanyu Choung. I'm from South Korea.",
             "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png",
             "moreImage": [
                 {
@@ -24,18 +24,18 @@
                     "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png"
                 }
             ],
-            "date": "07-15-2019",
-            "hours": 10,
-            "blocker": 5,
-            "language": "Java",
-            "role": "N/A",
+            "date": "11-30-2021",
+            "hours": 1,
+            "blocker": 1,
+            "language": "React.js",
+            "role": "Lead Developer",
             "teammate": "N/A",
             "completed": true
         },
         {
             "id": 2,
-            "name": "The Audio Visualization",
-            "description": "Used Unity Engine to create an audio visualization program, it outputs based on each hertz's strength.",
+            "name": "Computer Science Major",
+            "description": "I'm passionate about creating and playing video games since I was little.",
             "image" : "",
             "date": "08-15-2018",
             "hours": 20,

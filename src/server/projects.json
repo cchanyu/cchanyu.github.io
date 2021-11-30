@@ -114,6 +114,11 @@
             "role": "N/A",
             "teammate": "Cherena Bradley, Chris Estevez",
             "completed": true
+        },
+        {
+            "id": 7,
+            "name": "Obby In the Room",
+            "description": "You have to overcome obstacles by jumping on objects"
         }
     ]
 }

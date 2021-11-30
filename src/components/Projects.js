@@ -24,9 +24,9 @@ class Projects extends React.Component {
                         onFocus={enableKeyboardCursorToScroll}
                         ref={scrollRef}
                     >
-                        {projectData.map((project) => {
+                        {projectData.slice(0).reverse().map((project) => {
                             return (
-                                <div>
+                                <div key={project.id}>
                                     <ProjectPad
                                         key={project.id}
                                         content={project}
