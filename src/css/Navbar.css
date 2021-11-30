@@ -1,17 +1,41 @@
 .navbar {
     position: absolute;
+    background-color: #3b3b3b;
     top: 0;
     text-align: center;
-    border: black 1px solid;
     width: 100vw;
     height: 12vh;
 }
 
 .navbar--inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px;
     padding: 10px;
+    border-bottom: white 3px solid;
+}
+
+.navbar--inside--right {
+    display: flex;
+}
+
+.wifi, .user, .battery, .clock {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
 }
 
 .clock {
+    font-size: 18px;
+    width: 100px;
+}
 
+.user {
+    padding: 3px;
+    margin-top: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
 }
