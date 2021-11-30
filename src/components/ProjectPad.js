@@ -6,11 +6,9 @@ class ProjectPad extends React.Component {
         const { content } = this.props;
 
         return(
-            <div
-                className= "projectPad"
-                content={content}
-            >
-                Number: {content}
+            <div key={content.id} className= "projectPad">
+                <div className="Pad--id">Number: {content.id}</div>
+                <div className="Pad--Name">Name: {content.name}</div>
             </div>
         )
     }

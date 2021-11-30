@@ -16,7 +16,8 @@
     border-bottom: white 3px solid;
 }
 
-.navbar--inside--right {
+.navbar--inside--right,
+.navbar--inside--left {
     display: flex;
 }
 

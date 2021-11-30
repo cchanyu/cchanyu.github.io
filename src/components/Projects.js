@@ -4,7 +4,6 @@ import ProjectPad from './ProjectPad';
 import ScrollContainer from "react-indiana-drag-scroll";
 
 class Projects extends React.Component {
-    numbers = new Array(10).fill(1).map((_, index) => index + 1);
     scrollRef = createRef();
     clickHandler = () => {};
     enableKeyboardCursorToScroll = () => {
@@ -14,7 +13,8 @@ class Projects extends React.Component {
     };
 
     render(){
-        const { numbers, scrollRef, enableKeyboardCursorToScroll, clickHandler } = this;
+        const { projectData } = this.props;
+        const { scrollRef, enableKeyboardCursorToScroll, clickHandler } = this;
 
         return(
             <div className="project">
@@ -24,13 +24,18 @@ class Projects extends React.Component {
                         onFocus={enableKeyboardCursorToScroll}
                         ref={scrollRef}
                     >
-                        {numbers.map((e) => (
-                            <ProjectPad
-                                key={e}
-                                content={e}
-                                onClick={clickHandler}
-                            />
-                        ))}
+                        {projectData.map((project) => {
+                            return (
+                                <div>
+                                    <ProjectPad
+                                        key={project.id}
+                                        content={project}
+                                        onClick={clickHandler}
+                                    />
+                                    <div className="data--title">{project.name}</div>
+                                </div>
+                            )
+                        })}
                     </section>
                 </ScrollContainer>
             </div>

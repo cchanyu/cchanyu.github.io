@@ -27,24 +27,27 @@ class ContactMe extends React.Component {
     }
 
     render(){
+        const { name, email, message} = this.state;
+        const { handleSubmit, onMessageChange, onEmailChange, onNameChange } = this;
+
         return(
             <div className="contact">
                 <div className="contact--title">Contact Form</div>
                 <div className="contact--email">Email: Chanyu.Choung@lc.cuny.edu</div>
-                <form id="contact--form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form id="contact--form">
                 <div className="form--group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form--control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                    <input type="text" className="form--control" value={name} onChange={onNameChange.bind(this)} />
                 </div>
                 <div className="form--group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form--control" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                    <input type="email" className="form--control" value={email} onChange={onEmailChange.bind(this)} />
                 </div>
                 <div className="form--group">
                     <label htmlFor="message">Message</label>
-                    <textarea className="form--control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                    <textarea className="form--control" rows="5" value={message} onChange={onMessageChange.bind(this)} />
                 </div>
-                <button type="submit" className="btn">Submit</button>
+                <button type="submit" className="btn" onClick={handleSubmit}>Submit</button>
                 </form>
             </div>
         )
