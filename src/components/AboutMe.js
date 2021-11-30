@@ -1,16 +1,22 @@
 import React from 'react';
 import '../css/AboutMe.css'
+import ProjectPad from './ProjectPad';
 
 class AboutMe extends React.Component {
-    constructor(){
-        super()
-        this.state={}
-    }
+    board = ["1", "2", "3", "4"];
 
     render(){
+        const { board } = this;
+
         return(
             <div className="about">
-                AboutMe
+                {board.map(function(board, i){
+                    return(
+                        <ProjectPad
+                            key={i}
+                        />
+                    )
+                })}
             </div>
         )
     }
