@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import projectData from "./server/projects.json";
 import aboutmeData from "./server/aboutme.json";
 
@@ -46,25 +46,25 @@ class App extends Component{
 
         {/* Navigation */}
         <nav className="nav">
-          <Link className="link" to="/">
+          <NavLink className="link" to="/">
             <img className="icon" src={HomeIcon} alt="home" />
             <div className="hstext">Home</div>
-          </Link>
+          </NavLink>
 
-          <Link className="link" to="/about">
+          <NavLink className="link" to="/about">
             <img className="icon" src={AboutIcon} alt="about" />
             <div className="hstext">About</div>
-          </Link>
+          </NavLink>
 
-          <Link className="link" to="/projects">
+          <NavLink className="link" to="/projects">
             <img className="icon" src={ProjectIcon} alt="project" />
             <div className="hstext">Project</div>
-          </Link>
+          </NavLink>
 
-          <Link className="link" to="/contact">
+          <NavLink className="link" to="/contact">
             <img className="icon" src={ContactIcon} alt="contact" />
             <div className="hstext">Contact</div>
-          </Link>
+          </NavLink>
         </nav>
 
         <Footer />
