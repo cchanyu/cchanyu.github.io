@@ -5,7 +5,7 @@
             "id": 1,
             "name": "BDO RNG Enhancement Simulator",
             "description": "After learning how to use GUI in Java, I utilized my knowledge and created a system that mimic my favorite video game's enhancement system.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/11_bdosim.PNG",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/11_bdosim.png",
             "date": "07-15-2019",
             "language": "Java"
         },
@@ -37,7 +37,7 @@
             "id": 5,
             "name": "Quick Chat Application",
             "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/15_udpchat.PNG",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/15_udpchat.png",
             "date": "10-15-2019",
             "language": "Java"
         },
@@ -69,7 +69,7 @@
             "id": 10,
             "name": "Lottery Prediction AI",
             "description": "Uses multiple math libraries in Python to predict the potential set of number that could come out, based on the previous data with the machine learning techniques.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/20_lotto.PNG",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/20_lotto.png",
             "date": "03-15-2021",
             "language": "Python"
         }

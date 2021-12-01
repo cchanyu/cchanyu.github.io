@@ -10,7 +10,7 @@ class ProjectPad extends React.Component {
         }
     }
 
-    handleClick = () => {this.setState({detail: !this.state.detail});}
+    handleClick = () => { this.setState({detail: !this.state.detail}) }
 
     render(){
         const { content } = this.props;

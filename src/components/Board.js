@@ -116,7 +116,7 @@ export default class Game extends React.Component {
                     />
                 </div>
                 <div className="game-info">
-                    <div>{status}</div>
+                    <div className="text">{status}</div>
                     <ol>{moves}</ol>
                 </div>
             </div>

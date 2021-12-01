@@ -47,22 +47,22 @@ class App extends Component{
         {/* Navigation */}
         <nav className="nav">
           <Link className="link" to="/">
-            <img className="homei icon" src={HomeIcon} alt="home" />
+            <img className="icon" src={HomeIcon} alt="home" />
             <div className="hstext">Home</div>
           </Link>
 
           <Link className="link" to="/about">
-            <img className="abouti icon" src={AboutIcon} alt="about" />
+            <img className="icon" src={AboutIcon} alt="about" />
             <div className="hstext">About</div>
           </Link>
 
           <Link className="link" to="/projects">
-            <img className="projecti icon" src={ProjectIcon} alt="project" />
+            <img className="icon" src={ProjectIcon} alt="project" />
             <div className="hstext">Project</div>
           </Link>
 
           <Link className="link" to="/contact">
-            <img className="contacti icon" src={ContactIcon} alt="contact" />
+            <img className="icon" src={ContactIcon} alt="contact" />
             <div className="hstext">Contact</div>
           </Link>
         </nav>
