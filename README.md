@@ -2,6 +2,12 @@
 
 #### Link: https://cchanyu.github.io/
 
+### Need to work on:
+
+#### Scss implementation
+#### Redux implementation
+#### Hook up the backend
+
 ### References:
 
 #### Json: https://github.com/cchanyu/CCPortfolio
