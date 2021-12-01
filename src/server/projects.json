@@ -4,59 +4,26 @@
         {
             "id": 1,
             "name": "BDO RNG Enhancement Simulator",
-            "description": "Replica of my favorite video game called Black Desert Online. I reverse engineered and traced back their formula to create a simulation of their item enhancement system.",
+            "description": "After learning how to use GUI in Java, I utilized my knowledge and created a system that mimic my favorite video game's enhancement system.",
             "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png",
-            "moreImage": [
-                {
-                    "name" : "Google SpreadSheet",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic1.png"
-                },
-                {
-                    "name" : "Java GUI Development 1",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic2-1.png"
-                },
-                {
-                    "name" : "Java GUI Development 2",
-                    "image" : "https://github.com/cchanyu/BDORNGSim/blob/master/pic2-2.png"
-                },
-                {
-                    "name" : "Intro Picture",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png"
-                }
-            ],
             "date": "07-15-2019",
-            "hours": 10,
-            "blocker": 5,
-            "language": "Java",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "language": "Java"
         },
         {
             "id": 2,
             "name": "The Audio Visualization",
-            "description": "Used Unity Engine to create an audio visualization program, it outputs based on each hertz's strength.",
+            "description": "Used Unity game engine to create an audio visualization program, it outputs based on each hertz's strength. This tested my ability to use the API.",
             "image" : "",
             "date": "08-15-2018",
-            "hours": 20,
-            "blocker": 8,
-            "language": "C#",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "language": "C#"
         },
         {
             "id": 3,
-            "name": "Roblox Parkour Game",
-            "description": "Roblox Studio offers easy and quick game making, they encourage players to make their own world using their assets. I made a 4-stage parkour game through their official tutorials.",
+            "name": "Obby In the Room",
+            "description": "Used Roblox game engine to create an obstacle game, which a user has to overcome by moving around and jumping from a platform to another. It offers over 30 completed stages to beat.",
             "image" : "",
             "date": "04-15-2019",
-            "hours": 25,
-            "blocker": 8,
-            "language": "Lua",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "language": "Lua"
         },
         {
             "id": 4,
@@ -64,61 +31,47 @@
             "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
             "image" : "",
             "date": "06-15-2019",
-            "hours": 10,
-            "blocker": 7,
-            "language": "C#",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "language": "C#"
         },
         {
             "id": 5,
             "name": "Quick Chat Application",
             "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
             "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png",
-            "moreImage": [
-                {
-                    "name" : "Initial GUI Screen",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png"
-                },
-                {
-                    "name" : "Connected to Input",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic2.png"
-                },
-                {
-                    "name" : "Message has been sent",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic3.png"
-                },
-                {
-                    "name" : "Message has been received",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic4.png"
-                }
-            ],
             "date": "10-15-2019",
-            "hours": 25,
-            "blocker": 15,
-            "language": "Java",
-            "role": "N/A",
-            "teammate": "Dana Jackson",
-            "completed": true
+            "language": "Java"
         },
         {
             "id": 6,
             "name": "HBC Project Summary",
-            "description": "All the ongoing and future projects are listed in this site to keep track of its status and easier to present to the higher-up from different departments to view",
+            "description": "Used for internal employees at HBC. It helps them keep track the status of their task and makes it easier to report to the VP. VP uses it to share it with other department to show their progress.",
             "image" : "",
             "date": "02-01-2020",
-            "hours": 200,
-            "blocker": 50,
-            "language": "React.js",
-            "role": "N/A",
-            "teammate": "Cherena Bradley, Chris Estevez",
-            "completed": true
+            "language": "React.js"
         },
         {
-            "id": 7,
-            "name": "Obby In the Room",
-            "description": "You have to overcome obstacles by jumping on objects"
+            "id": 8,
+            "name": "Professional Clothing Shop",
+            "description": "It's a part of Roblox Metaverse program. It's a virtual clothing shop, where users could go around the store and select out the clothes they want to try or buy.It earns Robux currency, which can be used in other games.",
+            "image" : "",
+            "date": "07-15-2020",
+            "language": "Lua"
+        },
+        {
+            "id": 9,
+            "name": "2D Platformer Game",
+            "description": "A side scrolling platformer game. The game is live inside of Roblox. User needs to dodge the traps or monsters while collecting coins throughout the map and beat the final boss to win the game.",
+            "image" : "",
+            "date": "05-15-2021",
+            "language": "Lua"
+        },
+        {
+            "id": 10,
+            "name": "Lottery Prediction AI",
+            "description": "Uses multiple math libraries in Python to predict the potential set of number that could come out, based on the previous data with the machine learning techniques.",
+            "image" : "",
+            "date": "03-15-2021",
+            "language": "Python"
         }
     ]
 }

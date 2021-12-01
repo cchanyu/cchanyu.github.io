@@ -4,116 +4,38 @@
         {
             "id": 1,
             "name": "Self Introduction",
-            "description": "My name is Chanyu Choung. I'm from South Korea.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png",
-            "moreImage": [
-                {
-                    "name" : "Google SpreadSheet",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic1.png"
-                },
-                {
-                    "name" : "Java GUI Development 1",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic2-1.png"
-                },
-                {
-                    "name" : "Java GUI Development 2",
-                    "image" : "https://github.com/cchanyu/BDORNGSim/blob/master/pic2-2.png"
-                },
-                {
-                    "name" : "Intro Picture",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png"
-                }
-            ],
-            "date": "11-30-2021",
-            "hours": 1,
-            "blocker": 1,
-            "language": "React.js",
-            "role": "Lead Developer",
-            "teammate": "N/A",
-            "completed": true
+            "description": "Greetings. My name is Chanyu Choung. I'm from South Korea. I'm a student at Lehman College.",
+            "image" : ""
         },
         {
             "id": 2,
-            "name": "Computer Science Major",
-            "description": "I'm passionate about creating and playing video games since I was little.",
-            "image" : "",
-            "date": "08-15-2018",
-            "hours": 20,
-            "blocker": 8,
-            "language": "C#",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "name": "My Majors",
+            "description": "I currently major in both Computer Science and CGI. I'm expected to graduate at Fall of 2022. I love video games and both of my majors help with me creating my very own video game.",
+            "image" : ""
         },
         {
             "id": 3,
-            "name": "Roblox Parkour Game",
-            "description": "Roblox Studio offers easy and quick game making, they encourage players to make their own world using their assets. I made a 4-stage parkour game through their official tutorials.",
-            "image" : "",
-            "date": "04-15-2019",
-            "hours": 25,
-            "blocker": 8,
-            "language": "Lua",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "name": "My Interests",
+            "description": "My interests are watching K-Drama or Youtube, listening to the pop musics and playing video games. I don't SNS, but I socialize with people who have similar interests to me.",
+            "image" : ""
         },
         {
             "id": 4,
-            "name": "Hexagon Mobile Game",
-            "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
-            "image" : "",
-            "date": "06-15-2019",
-            "hours": 10,
-            "blocker": 7,
-            "language": "C#",
-            "role": "N/A",
-            "teammate": "N/A",
-            "completed": true
+            "name": "My Resume",
+            "description": "My Resume can be seen at ''.",
+            "image" : ""
         },
         {
             "id": 5,
-            "name": "Quick Chat Application",
-            "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png",
-            "moreImage": [
-                {
-                    "name" : "Initial GUI Screen",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png"
-                },
-                {
-                    "name" : "Connected to Input",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic2.png"
-                },
-                {
-                    "name" : "Message has been sent",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic3.png"
-                },
-                {
-                    "name" : "Message has been received",
-                    "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic4.png"
-                }
-            ],
-            "date": "10-15-2019",
-            "hours": 25,
-            "blocker": 15,
-            "language": "Java",
-            "role": "N/A",
-            "teammate": "Dana Jackson",
-            "completed": true
+            "name": "My Dream",
+            "description": "My dream is to become a full-time software engineer at New York. I'm willing to try my best to land a job and give it all I got. It's not easy, but it's a set of challenge that I have to overcome.",
+            "image" : ""
         },
         {
             "id": 6,
-            "name": "HBC Project Summary",
-            "description": "All the ongoing and future projects are listed in this site to keep track of its status and easier to present to the higher-up from different departments to view",
-            "image" : "",
-            "date": "02-01-2020",
-            "hours": 200,
-            "blocker": 50,
-            "language": "React.js",
-            "role": "N/A",
-            "teammate": "Cherena Bradley, Chris Estevez",
-            "completed": true
+            "name": "My Strength",
+            "description": "My strength comes from being into it. I fully dedicate myself and forget everything else, but to the task itself. I burn with the passion, motivation and dedication.",
+            "image" : ""
         }
     ]
 }
