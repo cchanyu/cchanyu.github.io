@@ -46,22 +46,22 @@ class App extends Component{
 
         {/* Navigation */}
         <nav className="nav">
-          <NavLink className="link" to="/">
+          <NavLink className="link" exact to="/" activeClassName="active">
             <img className="icon" src={HomeIcon} alt="home" />
             <div className="hstext">Home</div>
           </NavLink>
 
-          <NavLink className="link" to="/about">
+          <NavLink className="link" to="/about" activeClassName="active">
             <img className="icon" src={AboutIcon} alt="about" />
             <div className="hstext">About</div>
           </NavLink>
 
-          <NavLink className="link" to="/projects">
+          <NavLink className="link" to="/projects" activeClassName="active">
             <img className="icon" src={ProjectIcon} alt="project" />
             <div className="hstext">Project</div>
           </NavLink>
 
-          <NavLink className="link" to="/contact">
+          <NavLink className="link" to="/contact" activeClassName="active">
             <img className="icon" src={ContactIcon} alt="contact" />
             <div className="hstext">Contact</div>
           </NavLink>
