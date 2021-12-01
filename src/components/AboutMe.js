@@ -1,47 +1,46 @@
 import React, { createRef } from 'react';
-import '../css/AboutMe.css'
+import PropTypes from 'prop-types';
 import ProjectPad from './ProjectPad';
 import ScrollContainer from "react-indiana-drag-scroll";
+import '../css/AboutMe.css'
 
-class AboutMe extends React.Component {
-    scrollRef = createRef();
-    clickHandler = () => {};
-    enableKeyboardCursorToScroll = () => {
+const AboutMe = ({ aboutmeData }) => {
+    const scrollRef = createRef();
+    const clickHandler = () => {};
+    const enableKeyboardCursorToScroll = () => {
         if (this.scrollRef.current) {
             this.scrollRef.current.focus();
         }
     };
 
-    render(){
-        const { aboutmeData } = this.props;
-        const { scrollRef, enableKeyboardCursorToScroll, clickHandler } = this;
+    return(
+        <div className="project">
+            <ScrollContainer className="container">
+                <section
+                    className="tiles"
+                    onFocus={enableKeyboardCursorToScroll}
+                    ref={scrollRef}
+                >
+                    {aboutmeData.map((aboutme) => {
+                        return (
+                            <div key={aboutme.id}>
+                                <ProjectPad
+                                    key={aboutme.id}
+                                    content={aboutme}
+                                    onClick={clickHandler}
+                                />
+                                <div className="data--title text">{aboutme.name}</div>
+                            </div>
+                        )
+                    })}
+                </section>
+            </ScrollContainer>
+        </div>
+    )
+}
 
-        return(
-            <div className="project">
-                <ScrollContainer className="container">
-                    <section
-                        className="tiles"
-                        onFocus={enableKeyboardCursorToScroll}
-                        ref={scrollRef}
-                    >
-                        {aboutmeData.map((aboutme) => {
-                            return (
-                                <div key={aboutme.id}>
-                                    <ProjectPad
-                                        key={aboutme.id}
-                                        content={aboutme}
-                                        onClick={clickHandler}
-                                    />
-                                    <div className="data--title text">{aboutme.name}</div>
-                                </div>
-                            )
-                        })}
-                    </section>
-                </ScrollContainer>
-            </div>
-        )
-    }
-
+AboutMe.propTypes = {
+    aboutmeData: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default AboutMe;

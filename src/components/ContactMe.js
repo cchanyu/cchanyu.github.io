@@ -11,19 +11,18 @@ class ContactMe extends React.Component {
         }
     }
 
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-    }
-
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-    }
-
-    onMessageChange(event) {
-        this.setState({message: event.target.value})
-    }
-    
+    onNameChange(event) { this.setState({name: event.target.value}) }
+    onEmailChange(event) { this.setState({email: event.target.value}) }
+    onMessageChange(event) { this.setState({message: event.target.value}) }
     handleSubmit(event) {
+        const { name, email, message} = this.state;
+        event.preventDefault();
+        console.log("Message sent: ", name, email, message)
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
     }
 
     render(){
@@ -47,12 +46,11 @@ class ContactMe extends React.Component {
                     <label htmlFor="message">Message</label>
                     <textarea className="form--control" rows="5" value={message} onChange={onMessageChange.bind(this)} />
                 </div>
-                <button type="submit" className="btn" onClick={handleSubmit}>Submit</button>
+                <button type="submit" className="btn" onClick={handleSubmit.bind(this)}>Submit</button>
                 </form>
             </div>
         )
     }
-
 }
 
 export default ContactMe;
