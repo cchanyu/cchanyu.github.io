@@ -5,7 +5,7 @@
             "id": 1,
             "name": "BDO RNG Enhancement Simulator",
             "description": "After learning how to use GUI in Java, I utilized my knowledge and created a system that mimic my favorite video game's enhancement system.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/BDORNGSim/master/pic3.png",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/11_bdosim.PNG",
             "date": "07-15-2019",
             "language": "Java"
         },
@@ -29,7 +29,7 @@
             "id": 4,
             "name": "Hexagon Mobile Game",
             "description": "Used Unity Engine to create a mobile game and it's a simple game with endless hexagons closing in towards the player and they have to dodge and score high points.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/14_hexa.png",
             "date": "06-15-2019",
             "language": "C#"
         },
@@ -37,7 +37,7 @@
             "id": 5,
             "name": "Quick Chat Application",
             "description": "This program is based on UDP Socket, users can talk through their local IP addresses. It sends everyone a message until it hits a target to talk to.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/ChatApplication/master/PICS/pic1.png",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/15_udpchat.PNG",
             "date": "10-15-2019",
             "language": "Java"
         },
@@ -45,7 +45,7 @@
             "id": 6,
             "name": "HBC Project Summary",
             "description": "Used for internal employees at HBC. It helps them keep track the status of their task and makes it easier to report to the VP. VP uses it to share it with other department to show their progress.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/17_projsum.png",
             "date": "02-01-2020",
             "language": "React.js"
         },
@@ -69,7 +69,7 @@
             "id": 10,
             "name": "Lottery Prediction AI",
             "description": "Uses multiple math libraries in Python to predict the potential set of number that could come out, based on the previous data with the machine learning techniques.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/20_lotto.PNG",
             "date": "03-15-2021",
             "language": "Python"
         }
