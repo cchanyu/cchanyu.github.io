@@ -18,7 +18,7 @@ class ProjectPad extends React.Component {
 
         return(
             <div>
-                <img className="projectPad" src={content.image} alt="image" onClick={handleClick} />
+                <img className="projectPad" src={content.image} alt="content" onClick={handleClick} />
                 {this.state.detail ? <ProjectDetail toggle={handleClick} content={content} /> : null}
             </div>
         )

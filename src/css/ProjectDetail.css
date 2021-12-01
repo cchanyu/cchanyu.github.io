@@ -35,11 +35,6 @@
     width: 500px;
 }
 
-.modal--url:hover {
-    color: grey;
-    cursor: pointer;
-}
-
 .modal--image {
     margin: 0 auto 0 auto;
     height: 300px;
@@ -67,4 +62,9 @@
 .modal--close:hover {
     transition: transform .2s;
     transform: scale(1.2);
+}
+
+.modal--url:hover {
+    color: grey;
+    cursor: pointer;
 }
