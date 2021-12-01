@@ -4,7 +4,7 @@
         {
             "id": 1,
             "name": "Self Introduction",
-            "description": "Greetings. My name is Chanyu Choung. I'm from South Korea. I'm a student at Lehman College.",
+            "description": "Greetings. My name is Chanyu Choung. I'm from South Korea and I'm currently a student at Lehman College pursuing for Bachelor's Degree.",
             "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/01_intro.jpg"
         },
         {
@@ -23,7 +23,7 @@
             "id": 4,
             "name": "My Resume",
             "description": "My Resume can be seen at 'https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg'.",
-            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/04_resume.PNG"
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/04_resume.png"
         },
         {
             "id": 5,
