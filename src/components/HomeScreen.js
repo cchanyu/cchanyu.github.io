@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/HomeScreen.css'
+import Board from './Board';
 
 class HomeScreen extends React.Component {
     constructor(){
@@ -10,7 +11,8 @@ class HomeScreen extends React.Component {
     render(){
         return(
             <div className="hs">
-                HomeScreenEDIT2
+                <Board />
+                <div className="text title--game">Tic-Tac-Toe</div>
             </div>
         )
     }
