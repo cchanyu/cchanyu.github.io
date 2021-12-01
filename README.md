@@ -7,6 +7,7 @@
 #### Scss implementation
 #### Redux implementation
 #### Hook up the backend
+#### Mobile css adjustments
 
 ### References:
 
