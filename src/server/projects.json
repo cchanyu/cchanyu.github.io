@@ -13,7 +13,7 @@
             "id": 2,
             "name": "The Audio Visualization",
             "description": "Used Unity game engine to create an audio visualization program, it outputs based on each hertz's strength. This tested my ability to use the API.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/12_audio.png",
             "date": "08-15-2018",
             "language": "C#"
         },
@@ -21,7 +21,7 @@
             "id": 3,
             "name": "Obby In the Room",
             "description": "Used Roblox game engine to create an obstacle game, which a user has to overcome by moving around and jumping from a platform to another. It offers over 30 completed stages to beat.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/13_obby.jpg",
             "date": "04-15-2019",
             "language": "Lua"
         },
@@ -53,7 +53,7 @@
             "id": 8,
             "name": "Professional Clothing Shop",
             "description": "It's a part of Roblox Metaverse program. It's a virtual clothing shop, where users could go around the store and select out the clothes they want to try or buy.It earns Robux currency, which can be used in other games.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/18_professional.png",
             "date": "07-15-2020",
             "language": "Lua"
         },
@@ -61,7 +61,7 @@
             "id": 9,
             "name": "2D Platformer Game",
             "description": "A side scrolling platformer game. The game is live inside of Roblox. User needs to dodge the traps or monsters while collecting coins throughout the map and beat the final boss to win the game.",
-            "image" : "",
+            "image" : "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/19_platformer.png",
             "date": "05-15-2021",
             "language": "Lua"
         },

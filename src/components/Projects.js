@@ -32,7 +32,7 @@ class Projects extends React.Component {
                                         content={project}
                                         onClick={clickHandler}
                                     />
-                                    <div className="data--title">{project.name}</div>
+                                    <div className="data--title text">{project.name} - {project.language}</div>
                                 </div>
                             )
                         })}

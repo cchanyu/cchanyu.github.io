@@ -32,7 +32,7 @@ class AboutMe extends React.Component {
                                         content={aboutme}
                                         onClick={clickHandler}
                                     />
-                                    <div className="data--title">{aboutme.name}</div>
+                                    <div className="data--title text">{aboutme.name}</div>
                                 </div>
                             )
                         })}
