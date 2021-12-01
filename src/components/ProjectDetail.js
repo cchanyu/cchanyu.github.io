@@ -2,9 +2,10 @@ import React from 'react'
 import "../css/ProjectDetail.css"
 import Times from '../icon/times-circle-solid.svg';
 
-const ProjectDetail = ({ content }) => {
+const ProjectDetail = (props) => {
+    const { content, toggle } = props;
     const handleClick = () => {
-        this.props.toggle();
+        toggle();
     };
     
     return(
