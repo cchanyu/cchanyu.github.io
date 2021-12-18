@@ -33,7 +33,7 @@ class ContactMe extends React.Component {
             <div className="contact">
                 <div className="contact--title">Contact Form</div>
                 <div className="contact--email">Email: Chanyu.Choung@lc.cuny.edu</div>
-                <form id="contact--form">
+                <form id="contact--form" className="contact--form">
                 <div className="form--group">
                     <label htmlFor="name">Name</label>
                     <input type="text" className="form--control" value={name} onChange={onNameChange.bind(this)} />

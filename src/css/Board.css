@@ -72,7 +72,8 @@ button:hover, button:focus, button:active, button:visited {
 @media (max-width: 1024px) {
     .game {
         width: 100vw;
-        padding: 10vh 0 10vh 0;
+        padding: 0;
+        margin: 0;
     }
 
     .game-pad {

@@ -15,5 +15,7 @@
     .hs {
         margin: 0;
         width: 100vw;
+        justify-content: center;
+        align-items: center;
     }
 }

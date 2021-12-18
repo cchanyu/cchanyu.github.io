@@ -64,13 +64,19 @@
         margin-bottom: 1vh;
     }
 
-    .contact--form {
-        width: 100%;
+    .contact, .contact--form {
+        justify-content: center;
+        align-items: center;
     }
 
     .form--group {
         display: block;
+        width: 80vw;
         margin: 0;
+    }
+
+    .form--control {
+        height: 5vh;
     }
 
     .btn {
