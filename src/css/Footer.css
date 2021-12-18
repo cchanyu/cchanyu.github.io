@@ -67,7 +67,11 @@
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
+    .footer {
+        display: none;
+    }
+
     .footer--inside {
         margin: 0;
     }
