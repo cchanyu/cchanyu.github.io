@@ -64,7 +64,14 @@
         margin-bottom: 1vh;
     }
 
-    .contact, .contact--form {
+    .contact {
+        max-height: 68vh !important;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact--form {
         justify-content: center;
         align-items: center;
     }
