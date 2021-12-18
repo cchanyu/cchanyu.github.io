@@ -26,6 +26,5 @@
 @media (max-height: 700px) {
     .project {
         max-height: 68vh !important;
-        height: auto;
     }
 }
