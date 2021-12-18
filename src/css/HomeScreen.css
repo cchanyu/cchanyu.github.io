@@ -10,3 +10,10 @@
 .title--game {
     margin-bottom: 30px;
 }
+
+@media (max-width: 1024px) {
+    .hs {
+        margin: 0;
+        width: 100vw;
+    }
+}

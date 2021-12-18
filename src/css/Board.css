@@ -68,3 +68,18 @@ button:hover, button:focus, button:active, button:visited {
     overflow-y: hidden;
     overflow: auto;
 }
+
+@media (max-width: 1024px) {
+    .game {
+        width: 100vw;
+        padding: 10vh 0 10vh 0;
+    }
+
+    .game-pad {
+        margin: auto;
+    }
+
+    .game-desc, .game-info {
+        display: none;
+    }
+}

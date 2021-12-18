@@ -58,3 +58,30 @@
     border: 3px solid white !important;
     color: white !important;
 }
+
+@media (max-width: 1024px) {
+    .contact--email {
+        margin-bottom: 1vh;
+    }
+
+    .contact--form {
+        width: 100%;
+    }
+
+    .form--group {
+        display: block;
+        margin: 0;
+    }
+
+    .btn {
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        margin-top: 0;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

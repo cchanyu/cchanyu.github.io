@@ -68,3 +68,44 @@
     color: grey;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    .modal {
+        left: 0;
+        min-width: 100vw;
+        width: 100vw;
+    }
+
+    .modal--title {
+        margin-top: 5px;
+        font-size: 20px !important;
+        width: 100vw;
+    }
+
+    .modal--image {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .modal--desc {
+        width: 100vw;
+        height: 30vh !important;
+        overflow: auto;
+    }
+
+    .modal--url {
+        display: none;
+    }
+
+    .modal--close {
+        position: relative;
+        left: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal--image {
+        height: 30vh;
+    }
+}

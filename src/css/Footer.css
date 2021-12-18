@@ -41,3 +41,33 @@
     font-size: 18px;
     color: white;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        height: auto;
+    }
+
+    .gamepad {
+        margin-top: 5px !important;
+    }
+
+    .gamepad:hover, .icon:hover {
+        transform: scale(1) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        height: 10vh;
+    }
+
+    .footer--inside {
+        padding: 0;
+    }
+}
+
+@media (max-height: 700px) {
+    .footer--inside {
+        margin: 0;
+    }
+}

@@ -62,7 +62,7 @@ class Navbar extends React.Component {
                 <div className="navbar--inside">
                     <div className="navbar--inside--left">
                         <img className="icon user" src={User} alt="user" />
-                        <div className="text">Hi, Guest</div>
+                        <div className="text mtxt">Hi, Guest</div>
                     </div>
                     <div className="navbar--inside--right">
                         <div className="clock">
