@@ -46,3 +46,15 @@
     border: 3px solid white;
     border-radius: 50%;
 }
+
+@media (max-width: 600px) {
+    .mtxt {
+        display: none;
+    }
+}
+
+@media (max-height: 700px) {
+    .navbar--inside {
+        margin: 0;
+    }
+}
