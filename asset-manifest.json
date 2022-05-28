@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.f499422f.chunk.css",
-    "main.js": "/static/js/main.f39b30fc.chunk.js",
-    "main.js.map": "/static/js/main.f39b30fc.chunk.js.map",
+    "main.js": "/static/js/main.94e8f7d1.chunk.js",
+    "main.js.map": "/static/js/main.94e8f7d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e39f3cc8.js",
     "runtime-main.js.map": "/static/js/runtime-main.e39f3cc8.js.map",
-    "static/js/2.3d591ad5.chunk.js": "/static/js/2.3d591ad5.chunk.js",
-    "static/js/2.3d591ad5.chunk.js.map": "/static/js/2.3d591ad5.chunk.js.map",
+    "static/js/2.500130df.chunk.js": "/static/js/2.500130df.chunk.js",
+    "static/js/2.500130df.chunk.js.map": "/static/js/2.500130df.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.f499422f.chunk.css.map": "/static/css/main.f499422f.chunk.css.map",
-    "static/js/2.3d591ad5.chunk.js.LICENSE.txt": "/static/js/2.3d591ad5.chunk.js.LICENSE.txt",
+    "static/js/2.500130df.chunk.js.LICENSE.txt": "/static/js/2.500130df.chunk.js.LICENSE.txt",
     "static/media/battery-empty-solid.1d2a5373.svg": "/static/media/battery-empty-solid.1d2a5373.svg",
     "static/media/battery-full-solid.8b47db02.svg": "/static/media/battery-full-solid.8b47db02.svg",
     "static/media/battery-half-solid.5904ace6.svg": "/static/media/battery-half-solid.5904ace6.svg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e39f3cc8.js",
-    "static/js/2.3d591ad5.chunk.js",
+    "static/js/2.500130df.chunk.js",
     "static/css/main.f499422f.chunk.css",
-    "static/js/main.f39b30fc.chunk.js"
+    "static/js/main.94e8f7d1.chunk.js"
   ]
 }
