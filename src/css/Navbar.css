@@ -43,3 +43,14 @@
     border: 3px solid #C89EC6;
     border-radius: 50%;
 }
+
+.active {
+    text-decoration: none !important;
+}
+
+.navbar--text:hover, .active, .navbar--text:active {
+    background: linear-gradient(180deg, #cfabcf 0%, #9c689a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

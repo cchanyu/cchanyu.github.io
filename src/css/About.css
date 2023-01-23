@@ -55,3 +55,15 @@
     bottom: 0;
     position: absolute;
 }
+
+@media (max-height: 650px) {
+    .about--text-1, .about--text-2 {
+        display: none;
+    }
+}
+
+@media (max-height: 300px) {
+    .about--title {
+        display: none;
+    }
+}

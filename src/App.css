@@ -46,12 +46,12 @@
     }
 
     .about {
-        margin: 3vh 5vw 0 5vw;
+        margin: auto;
         width: 100vw;
     }
 
     .about--content{ 
-        width: 90vw;
+        width: 100vw;
     }
 
     .about--logo {
