@@ -1,33 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f499422f.chunk.css",
-    "main.js": "/static/js/main.94e8f7d1.chunk.js",
-    "main.js.map": "/static/js/main.94e8f7d1.chunk.js.map",
+    "main.css": "/static/css/main.bff7548b.chunk.css",
+    "main.js": "/static/js/main.23ccf026.chunk.js",
+    "main.js.map": "/static/js/main.23ccf026.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e39f3cc8.js",
     "runtime-main.js.map": "/static/js/runtime-main.e39f3cc8.js.map",
-    "static/js/2.500130df.chunk.js": "/static/js/2.500130df.chunk.js",
-    "static/js/2.500130df.chunk.js.map": "/static/js/2.500130df.chunk.js.map",
+    "static/js/2.14763271.chunk.js": "/static/js/2.14763271.chunk.js",
+    "static/js/2.14763271.chunk.js.map": "/static/js/2.14763271.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f499422f.chunk.css.map": "/static/css/main.f499422f.chunk.css.map",
-    "static/js/2.500130df.chunk.js.LICENSE.txt": "/static/js/2.500130df.chunk.js.LICENSE.txt",
-    "static/media/battery-empty-solid.1d2a5373.svg": "/static/media/battery-empty-solid.1d2a5373.svg",
-    "static/media/battery-full-solid.8b47db02.svg": "/static/media/battery-full-solid.8b47db02.svg",
-    "static/media/battery-half-solid.5904ace6.svg": "/static/media/battery-half-solid.5904ace6.svg",
-    "static/media/battery-quarter-solid.2378ac2d.svg": "/static/media/battery-quarter-solid.2378ac2d.svg",
-    "static/media/battery-three-qt-solid.dbfdb6e7.svg": "/static/media/battery-three-qt-solid.dbfdb6e7.svg",
-    "static/media/edit-solid.506925ed.svg": "/static/media/edit-solid.506925ed.svg",
-    "static/media/gamepad-solid.ede3088e.svg": "/static/media/gamepad-solid.ede3088e.svg",
-    "static/media/home-solid.38353f81.svg": "/static/media/home-solid.38353f81.svg",
-    "static/media/id-card-solid.43c93870.svg": "/static/media/id-card-solid.43c93870.svg",
-    "static/media/list-alt-solid.17ed4dde.svg": "/static/media/list-alt-solid.17ed4dde.svg",
-    "static/media/times-circle-solid.8abbdc17.svg": "/static/media/times-circle-solid.8abbdc17.svg",
-    "static/media/user-solid.4e9e99c1.svg": "/static/media/user-solid.4e9e99c1.svg",
-    "static/media/wifi-solid.bdfe4afa.svg": "/static/media/wifi-solid.bdfe4afa.svg"
+    "static/css/main.bff7548b.chunk.css.map": "/static/css/main.bff7548b.chunk.css.map",
+    "static/js/2.14763271.chunk.js.LICENSE.txt": "/static/js/2.14763271.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/background.8fbc087b.png",
+    "static/media/times-circle-solid.8abbdc17.svg": "/static/media/times-circle-solid.8abbdc17.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e39f3cc8.js",
-    "static/js/2.500130df.chunk.js",
-    "static/css/main.f499422f.chunk.css",
-    "static/js/main.94e8f7d1.chunk.js"
+    "static/js/2.14763271.chunk.js",
+    "static/css/main.bff7548b.chunk.css",
+    "static/js/main.23ccf026.chunk.js"
   ]
 }
