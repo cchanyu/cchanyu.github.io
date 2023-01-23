@@ -30,7 +30,7 @@ html {
     /* 2 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
-    background-color: black;
+    background-color: black !important;
 }
 
 /**
@@ -38,7 +38,7 @@ html {
    */
 body {
     margin: 0;
-    background: black;
+    background: black !important;
 }
 
 /* HTML5 display definitions
