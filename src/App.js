@@ -1,74 +1,44 @@
 import React, { Component } from "react";
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import projectData from "./server/projects.json";
-import aboutmeData from "./server/aboutme.json";
 
-import HomeScreen from './components/HomeScreen.js';
-import AboutMe from './components/AboutMe.js';
-import Projects from './components/Projects.js';
-import ContactMe from './components/ContactMe.js';
+import Resume from './components/Resume.js';
+import About from './components/About.js';
+import Project from './components/Project.js';
+import Contact from './components/Contact.js';
 import Navbar from './components/Navbar.js';
-import Footer from './components/Footer.js';
 
-import HomeIcon from './icon/home-solid.svg';
-import AboutIcon from './icon/id-card-solid.svg';
-import ProjectIcon from './icon/list-alt-solid.svg';
-import ContactIcon from './icon/edit-solid.svg';
 import './App.css'
 
 class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      projectData: projectData.projects,
-      aboutmeData: aboutmeData.aboutme
+      projectData: projectData.projects
     }
   }
 
   render(){
-    const { projectData, aboutmeData } = this.state;
+    const { projectData } = this.state;
 
     return (
       <div className="App">
-        <Navbar className="navbar" />
-        <div className="invisNavbar" />
+        <div className="content-invis" />
+        <div className="content-pane">
+          <Navbar className="nav" />
+          <div className="nav-invis" />
 
-        {/* React Route */}
-        <Routes className="route">
-          <Route exact path="/" element={<HomeScreen />}/>
-
-          <Route path="about" element={<AboutMe aboutmeData={aboutmeData} />}/>
+          {/* React Route */}
+          <Routes className="route">
+          <Route exact path="/" element={<About />}/>
           
-          <Route path="projects" element={<Projects projectData={projectData} />}/>
+          <Route path="project" element={<Project projectData={projectData} />}/>
 
-          <Route path="contact" element={<ContactMe />}/>
-        </Routes>
+          <Route path="resume" element={<Resume />}/>
 
-        {/* Navigation */}
-        <nav className="nav">
-          <NavLink className="link" exact to="/" activeClassName="active">
-            <img className="icon" src={HomeIcon} alt="home" />
-            <div className="hstext">Home</div>
-          </NavLink>
-
-          <NavLink className="link" to="/about" activeClassName="active">
-            <img className="icon" src={AboutIcon} alt="about" />
-            <div className="hstext">About</div>
-          </NavLink>
-
-          <NavLink className="link" to="/projects" activeClassName="active">
-            <img className="icon" src={ProjectIcon} alt="project" />
-            <div className="hstext">Project</div>
-          </NavLink>
-
-          <NavLink className="link" to="/contact" activeClassName="active">
-            <img className="icon" src={ContactIcon} alt="contact" />
-            <div className="hstext">Contact</div>
-          </NavLink>
-        </nav>
-
-        <Footer />
-        <div className="invisFooter" />
+          <Route path="contact" element={<Contact />}/>
+          </Routes>
+        </div>
       </div>
     );
   }
