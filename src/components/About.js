@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/About.css';
 
 const About = () => {
-    const about_logo='https://cdn.discordapp.com/attachments/550834824663924736/1066909397260959854/Artboard_2.png';
+    const about_logo='https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/artwork.png';
 
     return(
         <div className="about">
