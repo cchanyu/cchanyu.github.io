@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import '../css/Navbar.css';
 
 class Navbar extends React.Component {
+    hideContent = () => { document.getElementById("content-invis").style.display = 'none'; }
+    returnContent = () => { document.getElementById("content-invis").style.display = 'block'; }
     constructor(){
         super()
         this.state={
@@ -17,21 +19,21 @@ class Navbar extends React.Component {
                 <div className="navbar">
                     {/* Navigation */}
                     <nav className="navbar--inside">
-                    <NavLink className="navbar--link" exact to="/" activeClassName="active">
+                    <NavLink className="navbar--link" exact to="/" activeClassName="active" onClick={this.returnContent}>
                         <div className="navbar--text">About</div>
                     </NavLink>
 
-                    <NavLink className="navbar--link" to="/project" activeClassName="active">
+                    <NavLink className="navbar--link" to="/project" activeClassName="active" onClick={this.hideContent}>
                         <div className="navbar--text">Project</div>
                     </NavLink>
 
                     <img className="navbar--logo" src={navbar_logo} alt="navbar--logo" />
                     
-                    <NavLink className="navbar--link" to="/resume" activeClassName="active">
+                    <NavLink className="navbar--link" to="/resume" activeClassName="active" onClick={this.returnContent}>
                         <div className="navbar--text">Resume</div>
                     </NavLink>
 
-                    <NavLink className="navbar--link" to="/contact" activeClassName="active">
+                    <NavLink className="navbar--link" to="/contact" activeClassName="active" onClick={this.returnContent}>
                         <div className="navbar--text">Contact</div>
                     </NavLink>
                     </nav>

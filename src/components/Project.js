@@ -12,12 +12,12 @@ const Project = ({ projectData }) => {
             this.scrollRef.current.focus();
         }
     };
-
-    return(
+    
+    return (
         <div className="project">
-            <ScrollContainer className="container">
+            <ScrollContainer className="project--container">
                 <section
-                    className="tiles"
+                    className="project--tiles"
                     onFocus={enableKeyboardCursorToScroll}
                     ref={scrollRef}
                 >
@@ -29,7 +29,7 @@ const Project = ({ projectData }) => {
                                     content={project}
                                     onClick={clickHandler}
                                 />
-                                <div className="data--title text">{project.name} - {project.language}</div>
+                                <div className="project--title">{project.name} - {project.language}</div>
                             </div>
                         )
                     })}

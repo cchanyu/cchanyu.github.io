@@ -6,19 +6,16 @@ const ProjectDetail = (props) => {
     const { content, toggle } = props;
     const handleClick = () => { toggle() };
     const toURL = (props) => { window.open(props) }
-    let URLCSS = (typeof content.url === 'string') ? "modal--url text" : "";
+    let URLCSS = (typeof content.url === 'string') ? "modal--url" : "";
     
     return(
         <div className="bkmodal" onClick={handleClick}>
             <div className="modal" onClick={handleClick}>
-                <div className="modal--title text">{content.name}</div>
+                <div className="modal--title">{content.name}</div>
                 <img className="modal--image" src={content.image} alt="content" />
                 <div className={URLCSS} onClick={() => toURL(content.url)}>{content.url}</div>
-                <div className="modal--desc text">{content.description}</div>
-                <div className="modal--close">
-                    <img className="times icon2" src={Times} alt="times" onClick={handleClick} />
-                    <div className="text">Close</div>
-                </div>
+                <div className="modal--desc">{content.description}</div>
+                <button type="button" className="modal--button" onClick={handleClick}>Close</button>
             </div>
         </div>
     )
