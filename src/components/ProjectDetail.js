@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import "../css/ProjectDetail.css"
 import Times from '../icon/times-circle-solid.svg';
 
 const ProjectDetail = (props) => {

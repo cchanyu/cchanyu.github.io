@@ -1,65 +1,60 @@
 .App {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  background-color: #3b3b3b;
+    background-image: url(./contents/background.png);
+    background-color: black;
+    background-size: cover;
 }
 
-.invisNavbar {
-  height: 12vh;
+.content-pane {
+    height: 100vh;
+    width: 60vw;
+    margin: auto;
+
+    background: conic-gradient(from 142.6deg at 20.3% -5.66%, rgba(0, 0, 0, 0.5) 0deg, rgba(0, 0, 0, 0.3) 360deg);
 }
 
-.invisFooter {
-  height: 10vh;
+
+/* 
+    content-invis
+    content invisible is a shader that covers content-pane
+*/
+.content-invis {
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    margin: auto;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(180.16deg, rgba(0, 0, 0, 0) 51.57%, rgba(0, 0, 0, 0.704) 99.87%);
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  z-index: 5;
+/* 
+    nav-invis
+    nav invisible preserve the spacing for navbar, since navbar's position is absolute with top 0
+    aka navbar won't move even if there's scrolls, it sticks to the top and won't scroll away 
+*/
+.nav-invis {
+    height: 120px;
 }
 
-.link {
-  width: 75px;
-  z-index: 5;
-}
+@media (max-width: 1024px) {
+    .content-pane, .content-invis, .nav {
+        width: 100vw;
+    }
 
-.icon {
-  border: 3px solid white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 0 12px 0 12px;
-}
+    .about {
+        margin: 3vh 5vw 0 5vw;
+        width: 100vw;
+    }
 
-.icon:hover {
-  transition: transform .2s;
-  transform: scale(1.2);
-}
+    .about--content{ 
+        width: 90vw;
+    }
 
-.icon:hover + .hstext {
-  display: block;
-}
-
-.hstext {
-  display: none;
-  margin: 0 12px 0 12px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-}
-
-.active {
-  z-index: 10;
-  transform: scale(1.2);
-}
-
-.active > div {
-  z-index: 10;
-  display: block;
+    .about--logo {
+        display: none;
+    }
 }
