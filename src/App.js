@@ -23,7 +23,7 @@ class App extends Component{
 
     return (
       <div className="App">
-        <div className="content-invis" />
+        <div className="content-invis" id="content-invis" />
         <div className="content-pane">
           <Navbar className="nav" />
           <div className="nav-invis" />
