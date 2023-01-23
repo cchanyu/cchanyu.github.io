@@ -1,24 +1,28 @@
-### Live Deployment Link:
+### Live Deployment Link:<br>
 
-#### Link: https://cchanyu.github.io/
+***<br>
 
-### Notes:
+#### Link: https://cchanyu.github.io/<br>
 
-Hello,
-I'm finally updating my portfolio site.
-The previous version had a game console concept.
-However, there were feedbacks regarding poor responsiveness
-and hard to navigate at first glance, and I agree to both.
-As a result, I wasn't leaving a good impression to recruiters.
+#### Notes:<br>
 
-This one is still work in progress.
-However, it's a lot more responsive and easy to navigate.
+Hello,<br>
 
-There's still a lot left to implement.
-Including hooking up the backend to the firebase.
+This is the updated version of my portfolio.<br>
+The previous version will be transferred to: https://cchanyu.github.io/CCPortfolio/<br>
+The previous version had a game console concept.<br>
 
-And implementing Google Auth to prevent strangers 
-from submitting contact form or viewing the resume.
+However, there were feedbacks regarding poor responsiveness<br>
+and hard to navigate at first glance, which I agree to both.<br>
+As a result, I wasn't leaving a good impression to visitors.<br>
 
-That's all I have for now.
-Thank you for visiting and feel free to leave comments.
+This one is still work-in-progress.<br>
+So far it's more responsive and easier to navigate.<br>
+
+I still want to implement new features.<br>
+Including hooking up the backend to the firebase.<br>
+
+And using the Google OAuth to prevent strangers<br>
+from submitting contact form or view my resume.<br>
+
+Thank you for visiting and feel free to leave comments. <3<br>
