@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectDetail from './ProjectDetail';
+import '../css/Project.css';
 
 class ProjectPad extends React.Component {
     constructor(){
