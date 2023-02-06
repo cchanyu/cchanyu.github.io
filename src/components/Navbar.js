@@ -27,13 +27,15 @@ class Navbar extends React.Component {
                         <div className="navbar--text">Project</div>
                     </NavLink>
 
-                    <img className="navbar--logo" src={navbar_logo} alt="navbar--logo" />
+                    <NavLink className="navbar--link" to="/login" activeClassName="active" onClick={this.hideContent}>
+                        <img className="navbar--logo" src={navbar_logo} alt="navbar--logo" />
+                    </NavLink>
                     
-                    <NavLink className="navbar--link" to="/resume" activeClassName="active" onClick={this.returnContent}>
+                    <NavLink className="navbar--link" to="/resume" activeClassName="active" onClick={this.hideContent}>
                         <div className="navbar--text">Resume</div>
                     </NavLink>
 
-                    <NavLink className="navbar--link" to="/contact" activeClassName="active" onClick={this.returnContent}>
+                    <NavLink className="navbar--link" to="/contact" activeClassName="active" onClick={this.hideContent}>
                         <div className="navbar--text">Contact</div>
                     </NavLink>
                     </nav>

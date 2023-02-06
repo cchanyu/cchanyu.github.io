@@ -7,6 +7,7 @@ import About from './components/About.js';
 import Project from './components/Project.js';
 import Contact from './components/Contact.js';
 import Navbar from './components/Navbar.js';
+import Login from './components/Login.js';
 
 import './App.css'
 
@@ -14,12 +15,23 @@ class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      projectData: projectData.projects
+      projectData: projectData.projects,
+      isLogged: false
     }
+    this.checkLogged = this.checkLogged.bind(this)
+  }
+
+  checkLogged() {
+    <>
+      { this.isLogged ? 
+      this.setState({ isLogged: false }) : 
+      this.setState({ isLogged: true })}
+    </>
   }
 
   render(){
-    const { projectData } = this.state;
+    const { projectData, isLogged } = this.state;
+    const { checkLogged } = this;
 
     return (
       <div className="App">
@@ -33,10 +45,12 @@ class App extends Component{
           <Route exact path="/" element={<About />}/>
           
           <Route path="project" element={<Project projectData={projectData} />}/>
-
+          
           <Route path="resume" element={<Resume />}/>
 
-          <Route path="contact" element={<Contact />}/>
+          <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+
+          <Route path="login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
           </Routes>
         </div>
       </div>

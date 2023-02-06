@@ -44,6 +44,12 @@
     border-radius: 50%;
 }
 
+.navbar--logo:hover {
+    opacity: .5;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 .active {
     text-decoration: none !important;
 }

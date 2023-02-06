@@ -55,6 +55,11 @@
     border: 1px solid #C89EC6;
 }
 
+.contact--align {
+    display: flex;
+    margin: auto;
+}
+
 .contact--button {
     margin-top: 20px;
     text-align: center;
