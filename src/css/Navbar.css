@@ -60,3 +60,16 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+@media (max-width: 650px) {
+    .navbar--inside {
+        padding: 0;
+        margin-top: 20px !important;
+        margin: 0;
+    }
+
+    .navbar--logo {
+        height: 70px;
+        width: 70px;
+    }
+}

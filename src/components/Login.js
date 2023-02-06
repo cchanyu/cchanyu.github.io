@@ -28,7 +28,7 @@ function handleSignout(props) {
 
 export default function Login(props) {
     return (
-        <div className='about'>
+        <div className='project'>
             {props.isLogged ? 
             <button type="submit" className="contact--button" onClick={() => handleSignout(props)}>Logout</button> : 
             <button type="submit" className="contact--button" onClick={() => handleSignin(props)}>Login</button>}

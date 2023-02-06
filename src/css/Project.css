@@ -169,6 +169,10 @@
     .modal--desc, .modal--image, .modal--title {
         width: 90vw;
     }
+
+    .project {
+        margin: 0;
+    }
 }
 
 @media (max-height: 650px) {

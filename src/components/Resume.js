@@ -24,8 +24,8 @@ function ResumeHolder() {
 
 function ViewButton(props) { 
     return (
-    <div className='about'>
-        <button type="submit" className="contact--button" onClick={() => props.viewResume()}>Resume</button> 
+    <div className='project'>
+        <button type="submit" className="contact--button" onClick={() => props.viewResume()}>View</button> 
     </div>
     )
 }
