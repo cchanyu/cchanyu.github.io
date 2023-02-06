@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import projectData from "./server/projects.json";
 
 import Resume from './components/Resume.js';
@@ -42,15 +42,17 @@ class App extends Component{
 
           {/* React Route */}
           <Routes className="route">
-          <Route exact path="/" element={<About />}/>
-          
-          <Route path="project" element={<Project projectData={projectData} />}/>
-          
-          <Route path="resume" element={<Resume />}/>
+            <Route path="*" element={<Navigate to ="/" />}/>
+            
+            <Route exact path="/" element={<About />}/>
+            
+            <Route path="project" element={<Project projectData={projectData} />}/>
+            
+            <Route path="resume" element={<Resume />}/>
 
-          <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+            <Route path="contact" element={isLogged ? <Contact /> : <Login isLogged={isLogged} checkLogged={checkLogged} />}/>
 
-          <Route path="login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
+            <Route path="login" element={<Login isLogged={isLogged} checkLogged={checkLogged} />}/>
           </Routes>
         </div>
       </div>
