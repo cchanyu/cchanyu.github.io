@@ -6,27 +6,10 @@ function handleSignin(props) {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
     .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        const user = result.user;
-        const email = user.email;
-        const name = user.displayName;
-        const profilepic = user.photoURL;
-        console.log("token: ", token);
-        console.log("user: ", user);
-        console.log("email: ", email);
-        console.log("name: ", name);
-        
-        localStorage.setItem("user", user);
+        const email = result.user.email;
         localStorage.setItem("email", email);
-        
         props.checkLogged();
-        console.log("result: ", result);
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        const email = error.customData.email;
-        const credential = GoogleAuthProvider.credentialFromError(error);
         console.log("error: ", error);
     });
 };
