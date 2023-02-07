@@ -23,14 +23,12 @@ const Project = ({ projectData }) => {
                 >
                     {projectData.slice(0).reverse().map((project) => {
                         return (
-                            <div key={project.id}>
-                                <ProjectPad
-                                    key={project.id}
-                                    content={project}
-                                    onClick={clickHandler}
-                                />
-                                <div className="project--title">{project.name} - {project.language}</div>
-                            </div>
+                            <ProjectPad
+                                className='project--pad'
+                                key={project.id}
+                                content={project}
+                                onClick={clickHandler}
+                            />
                         )
                     })}
                 </section>

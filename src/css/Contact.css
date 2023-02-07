@@ -69,16 +69,16 @@
 
     background: rgba(0, 0, 0, 0.30);
     border: 1px solid #C89EC6;
-    border-radius: 15px;
+    border-radius: 10px;
 
     width: 200px;
     height: 50px;
 }
 
 .contact--button:hover {
-    background-color: rgba(0, 0, 0, 0.80) !important;
-    border: 3px solid #C89EC6 !important;
-    color: #C89EC6 !important;
+    background-color: #C89EC6 !important;
+    border: 1px solid #C89EC6;
+    border-radius: 10px;
 }
 
 
@@ -108,9 +108,13 @@
     }
 
     .contact--button {
-        border-radius: 5px;
+        border-radius: 10px;
         width: 100px;
         height: 50px;
+        margin-top: 0;
+    }
+
+    .contact--title {
         margin-top: 0;
     }
 

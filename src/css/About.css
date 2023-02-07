@@ -21,6 +21,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .about--name {
@@ -50,8 +52,9 @@
 }
 
 .about--logo {
-    height: 800px;
-    width: 600px;
+    height: calc(100vh - 120px);
+    max-height: 800px;
+    max-width: 600px;
 
     right: 20vw;
     bottom: 0;
