@@ -44,6 +44,12 @@
     border-radius: 50%;
 }
 
+.navbar--logo:hover {
+    opacity: .5;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 .active {
     text-decoration: none !important;
 }
@@ -53,4 +59,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+@media (max-width: 650px) {
+    .navbar--inside {
+        padding: 0;
+        margin-top: 20px !important;
+        margin: 0;
+    }
+
+    .navbar--logo {
+        height: 70px;
+        width: 70px;
+    }
 }

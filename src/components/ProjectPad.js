@@ -17,8 +17,14 @@ class ProjectPad extends React.Component {
         const { handleClick } = this;
 
         return(
-            <div>
-                <img className="projectPad" src={content.image} alt="content" onClick={handleClick} />
+            <div className='project--map'>
+                <div className='project--cover'>
+                    <img className="project--image" src={content.image} alt="content" onClick={handleClick} />
+                </div>
+                <div className='project--row'>
+                    <div className="project--title" onClick={handleClick}>{content.name} - {content.language}</div>
+                    <div className='project--desc'>{content.description}</div>
+                </div>
                 {this.state.detail ? <ProjectDetail toggle={handleClick} content={content} /> : null}
             </div>
         )

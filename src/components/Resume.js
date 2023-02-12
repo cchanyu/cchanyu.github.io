@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/Resume.css';
 
 const Resume = () => {
-    const resume = "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg";
-    
+    const [ showResume, setShowResume ] = useState(false);
+    const viewResume = (e) => {
+        setShowResume(true)
+    }
     return(
+        <>
+            {showResume ? <ResumeHolder /> : <ViewButton viewResume={viewResume} /> }
+        </>
+    )
+}
+
+function ResumeHolder() {
+    const resume = "https://raw.githubusercontent.com/cchanyu/cchanyu.github.io/master/src/contents/Resume.jpg";
+    return (
         <div className="resume">
             <img className="resume-pane" src={resume} alt="resume" />
         </div>
+    )
+}
+
+function ViewButton(props) { 
+    return (
+    <div className='project'>
+        <button type="submit" className="contact--button" onClick={() => props.viewResume()}>View</button> 
+    </div>
     )
 }
 

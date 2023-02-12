@@ -19,10 +19,7 @@ As a result, I wasn't leaving a good impression to visitors.<br>
 This one is still work-in-progress.<br>
 So far it's more responsive and easier to navigate.<br>
 
-I still want to implement new features.<br>
-Including hooking up the backend to the firebase.<br>
-
-And using the Google OAuth to prevent strangers<br>
-from submitting contact form or view my resume.<br>
+My current goal is to implement the animation to make<br> 
+the site more visually appealing and flow smoother.<br>
 
 Thank you for visiting and feel free to leave comments. <3<br>
