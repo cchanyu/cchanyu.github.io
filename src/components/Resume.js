@@ -25,7 +25,8 @@ function ResumeHolder() {
 function ViewButton(props) { 
     return (
     <div className='project'>
-        <button type="submit" className="contact--button" onClick={() => props.viewResume()}>View</button> 
+        <div className='contact--info'>If you want to see my resume, please click the button:</div>
+        <button type="submit" className="contact--button" onClick={() => props.viewResume()}>View Resume</button> 
     </div>
     )
 }

@@ -8,7 +8,8 @@ class Contact extends React.Component {
         this.state = {
           name: '',
           email: '',
-          message: ''
+          message: '',
+          success: {}
         }
     }
 
@@ -17,9 +18,25 @@ class Contact extends React.Component {
     onMessageChange(event) { this.setState({message: event.target.value})}
     handleSubmit(event) {
         const { name, email, message } = this.state;
-        this.postData();
-        event.preventDefault();
-        console.log("Message sent: ", name, email, message)
+        if (name === '' || email === '' || message === '') {
+            alert("Please fill out all the fields.");
+            event.preventDefault();
+        } else {
+            this.postData();
+            event.preventDefault();
+
+            // CC: displays a successfully submitted message
+            this.setState({success: {display: "block"}})
+            console.log("Message sent: ", name, email, message)
+
+            // CC: field value reset
+            this.resetData();
+            setTimeout(function(){
+                this.setState({ success: {} })
+            }.bind(this), 3000);
+        }
+    }
+    resetData() {
         this.setState({
             name: '',
             email: '',
@@ -45,7 +62,7 @@ class Contact extends React.Component {
     }
 
     render(){
-        const { name, email, message } = this.state;
+        const { name, email, message, success } = this.state;
         const { handleSubmit, onMessageChange, onEmailChange, onNameChange } = this;
 
         return(
@@ -66,7 +83,8 @@ class Contact extends React.Component {
                         <label className="contact--name" htmlFor="message">Message</label>
                         <textarea className="contact--input" rows="5" value={message} onChange={onMessageChange.bind(this)} />
                     </div>
-                    <button type="submit" className="contact--button" onClick={handleSubmit.bind(this)}>Submit</button>
+                    <button type="submit" className="contact--button-2" onClick={handleSubmit.bind(this)}>Submit</button>
+                    <div className='contact--success' style={success}>Successfully Submitted!</div>
                 </form>
             </div>
         )
