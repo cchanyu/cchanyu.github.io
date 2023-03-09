@@ -59,6 +59,10 @@
     border: 1px solid #E3D2E3;
 }
 
+.indiana-scroll-container--hide-scrollbars {
+    overflow: scroll !important;
+}
+
 .bkmodal {
     z-index: 20;
     position: absolute;
@@ -75,7 +79,7 @@
     text-align: center;
     position: absolute;
     left: 20vw;
-    background: #0f060f;
+    background: linear-gradient(49deg, rgba(30,13,36,1) 0%, rgba(16,7,18,1) 20%, rgba(16,6,19,1) 70%, rgba(67,28,80,1) 100%);
     text-align: center;
     min-width: 536px;
     width: 60vw;
