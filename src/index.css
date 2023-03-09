@@ -30,11 +30,8 @@ html {
     /* 2 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
-<<<<<<< HEAD
     background-color: black !important;
-=======
     scroll-behavior: smooth;
->>>>>>> f499b7ff5d1db86a2b22820fb7617ce0060078c1
 }
 
 /**

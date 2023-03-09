@@ -95,7 +95,7 @@
 .navbar--text:focus,
 .active {
     cursor: pointer;
-    animation: 2s Blazing infinite alternate linear;
+    color: #e0cfcf;
 }
 
 @keyframes showup {
@@ -137,37 +137,4 @@
     0% { transform: translatey(0px); }
     50% { transform: translatey(-5px); }
     100% { transform: translatey(0px); }
-}
-
-@keyframes Blazing {
-    0%   { text-shadow: 0 3px 20px #E3D2E3, 0 0 20px #E3D2E3,
-      0 0 10px #bc50b7,
-      0 0 0 #C89EC6,
-      0 0 5px #C89EC6,
-      -2px -5px 5px #C89EC6,
-      4px -10px 10px #C89EC6; }
-    25%   { text-shadow: 0 3px 20px #E3D2E3, 0 0 30px #E3D2E3,
-      0 0 20px #bc50b7,
-      0 0 5px #C89EC6,
-      -2px -5px 5px #C89EC6,
-      3px -10px 10px #C89EC6,
-      -4px -15px 20px #C89EC6; }
-    50%   { text-shadow: 0 3px 20px #E3D2E3, 0 0 20px #E3D2E3,
-      0 -5px 10px #bc50b7,
-      -2px -5px 5px #C89EC6,
-      3px -10px 10px #C89EC6,
-      -4px -15px 20px #C89EC6,
-      2px -20px 30px rgba(255, 0, 217, 0.5); }
-    75%   { text-shadow: 0 3px 20px #E3D2E3, 0 0 20px #E3D2E3,
-      0 -5px 10px #bc50b7,
-      3px -5px 5px #C89EC6,
-      -4px -10px 10px #C89EC6,
-      2px -20px 30px rgba(255, 0, 217, 0.5),
-      0px -25px 40px rgba(255,255,0,0)}
-    100%   { text-shadow: 0 3px 20px #E3D2E3, 0 0 20px #E3D2E3,
-      0 0 10px #bc50b7,
-      0 0 0 #C89EC6,
-      0 0 5px #C89EC6,
-      -2px -5px 5px #C89EC6,
-      4px -10px 10px #C89EC6; }
 }

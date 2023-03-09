@@ -18,6 +18,31 @@
     background-clip: text;
 }
 
+.contact--wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact--info, .contact--success {
+    color: #C89EC6;
+}
+
+.contact--success {
+    display: none;
+}
+
+.contact--icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.contact--text {
+    font-size: 12px;
+}
+
 .contact--title {
     font-weight: 700;
     font-size: 25px;
@@ -60,7 +85,11 @@
     margin: auto;
 }
 
-.contact--button {
+.contact--button, .contact--button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-top: 20px;
     text-align: center;
     line-height: center;
@@ -73,6 +102,11 @@
 
     width: 200px;
     height: 50px;
+    padding: 0;
+}
+
+.contact--button-2 {
+    display: inline-block !important;
 }
 
 .contact--button:hover {
