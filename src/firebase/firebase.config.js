@@ -3,8 +3,6 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 require('dotenv').config();
-console.log("process env: ", process.env)
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,

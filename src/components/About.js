@@ -8,7 +8,7 @@ const About = () => {
         <div className="about">
             <div className='about--content'>
                 <div className='about--name'>Chanyu Choung</div>
-                <div className='about--title'>Associate Cloud Engineer</div>
+                <div className='about--title'>Full-Stack Developer</div>
 
                 <div className='about--text-1'>Hello,</div>
                 <div className='about--text-2'>Thank you for visiting my site.</div>
@@ -19,8 +19,8 @@ const About = () => {
                 <div className='about--text-2'>North of NYC called Mamaroneck</div>
                 
                 <div className='about--text-1'>My current goal is to become a</div>
-                <div className='about--text-1'>Professional Cloud Engineer</div>
-                <div className='about--text-2'>Working on GCP Cloud Architect Certificate</div>
+                <div className='about--text-1'>Full Stack Developer</div>
+                <div className='about--text-2'>Currently working on GC-PCA</div>
             </div>
             <img className="about--logo" src={about_logo} alt="about--logo" />
         </div>
