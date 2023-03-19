@@ -1,50 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { firestore } from '../firebase/firebase.config';
 import '../css/Contact.css';
 
-class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          name: '',
-          email: '',
-          message: '',
-          success: {}
-        }
-    }
+const Contact = () => {
 
-    onNameChange(event) { this.setState({name: event.target.value})}
-    onEmailChange(event) { this.setState({email: event.target.value})}
-    onMessageChange(event) { this.setState({message: event.target.value})}
-    handleSubmit(event) {
-        const { name, email, message } = this.state;
+    const [ name, setName ] = useState('');
+    const [ email, setEmail ] = useState('');
+    const [ message, setMessage ] = useState('');
+    const [ success, setSuccess ] = useState({});
+
+    const handleSubmit = async(e) => {
         if (name === '' || email === '' || message === '') {
             alert("Please fill out all the fields.");
-            event.preventDefault();
+            e.preventDefault();
         } else {
-            this.postData();
-            event.preventDefault();
+            postData();
+            e.preventDefault();
 
             // CC: displays a successfully submitted message
-            this.setState({success: {display: "block"}})
+            setSuccess({display: "block"})
             console.log("Message sent: ", name, email, message)
 
             // CC: field value reset
-            this.resetData();
+            resetData();
             setTimeout(function(){
-                this.setState({ success: {} })
-            }.bind(this), 3000);
+                setSuccess({})
+            }, 3000);
         }
     }
-    resetData() {
-        this.setState({
-            name: '',
-            email: '',
-            message: ''
-        })
+
+    function resetData() {
+        setName('');
+        setEmail('');
+        setMessage('');
     }
-    postData() {
-        const { name, email, message } = this.state;
+
+    function postData() {
         const senderid = localStorage.getItem("email");
         const time = Date.now()
         firestore.collection("contact").add({
@@ -53,42 +44,35 @@ class Contact extends React.Component {
           Message: message,
           SenderID: senderid,
           PostedOn: new Intl.DateTimeFormat('en-US', {
-          year: 'numeric', 
-          month: 'long', 
-          day: '2-digit', 
-          hour: '2-digit',
+          year: 'numeric', month: 'long', 
+          day: '2-digit', hour: '2-digit',
           minute: '2-digit'}).format(time),
         })
     }
 
-    render(){
-        const { name, email, message, success } = this.state;
-        const { handleSubmit, onMessageChange, onEmailChange, onNameChange } = this;
-
-        return(
-            <div className="contact">
-                <div className="contact--title">Contact Form</div>
-                <div className="contact--email">Email: Chanyu.Choung@lc.cuny.edu</div>
-                <div className="contact--link">Linkedin: https://www.linkedin.com/in/chanyu-c/</div>
-                <form id="contact--form" className="contact--form">
-                    <div className="contact--group">
-                        <label className="contact--name" htmlFor="name">Name</label>
-                        <input type="text" className="contact--input" value={name} onChange={onNameChange.bind(this)} />
-                    </div>
-                    <div className="contact--group">
-                        <label className="contact--name" htmlFor="email">Email</label>
-                        <input type="email" className="contact--input" value={email} onChange={onEmailChange.bind(this)} />
-                    </div>
-                    <div className="contact--group">
-                        <label className="contact--name" htmlFor="message">Message</label>
-                        <textarea className="contact--input" rows="5" value={message} onChange={onMessageChange.bind(this)} />
-                    </div>
-                    <button type="submit" className="contact--button-2" onClick={handleSubmit.bind(this)}>Submit</button>
-                    <div className='contact--success' style={success}>Successfully Submitted!</div>
-                </form>
-            </div>
-        )
-    }
+    return(
+        <div className="contact">
+            <div className="contact--title">Contact Form</div>
+            <div className="contact--email">Email: Chanyu.Choung@lc.cuny.edu</div>
+            <div className="contact--link">Linkedin: https://www.linkedin.com/in/chanyu-c/</div>
+            <form id="contact--form" className="contact--form">
+                <div className="contact--group">
+                    <label className="contact--name" htmlFor="name">Name</label>
+                    <input type="text" className="contact--input" value={name} onChange={(e) => setName(e.target.value)} />
+                </div>
+                <div className="contact--group">
+                    <label className="contact--name" htmlFor="email">Email</label>
+                    <input type="email" className="contact--input" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className="contact--group">
+                    <label className="contact--name" htmlFor="message">Message</label>
+                    <textarea className="contact--input" rows="5" value={message} onChange={(e) => setMessage(e.target.value)} />
+                </div>
+                <button type="submit" className="contact--button-2" onClick={handleSubmit}>Submit</button>
+                <div className='contact--success' style={success}>Successfully Submitted!</div>
+            </form>
+        </div>
+    )
 }
 
 export default Contact;

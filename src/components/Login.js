@@ -5,11 +5,11 @@ import GoogleIcon from '../icon/google.svg';
 
 function handleSignin(props) {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider)
-    .then((result) => {
+    signInWithPopup(auth, provider).then((result) => {
         const email = result.user.email;
         localStorage.setItem("email", email);
-        props.checkLogged();
+        localStorage.setItem("isLogged", true);
+        props.setIsLogged(true);
     }).catch((error) => {
         console.log("error: ", error);
     });
@@ -17,11 +17,10 @@ function handleSignin(props) {
 
 function handleSignout(props) {
     const target = getAuth();
-    signOut(target)
-    .then((result) => {
-        props.checkLogged();
+    signOut(target).then((result) => {
+        props.setIsLogged(false);
+        localStorage.clear();
         window.location = '/';
-        console.log("result: ", result);
     }).catch((error) => {
         console.log("error: ", error);
     });
