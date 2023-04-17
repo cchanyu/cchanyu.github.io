@@ -9,7 +9,7 @@ import Contact from './components/Contact.js';
 import Navbar from './components/Navbar.js';
 import Login from './components/Login.js';
 
-import './App.css'
+import './App.scss'
 
 function App() {
 

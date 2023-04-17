@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/Resume.css';
+import '../css/Resume.scss';
 
 const Resume = () => {
     const [ showResume, setShowResume ] = useState(false);

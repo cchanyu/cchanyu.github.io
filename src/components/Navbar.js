@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../css/Navbar.css';
+import '../css/Navbar.scss';
 
 const Navbar = () => {
     const hideContent = () => { document.getElementById("content-invis").style.display = 'none'; }
