@@ -2,7 +2,7 @@ import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
 import ProjectPad from './ProjectPad';
 import ScrollContainer from "react-indiana-drag-scroll";
-import '../css/Project.css';
+import '../css/Project.scss';
 
 const Project = ({ projectData }) => {
     const scrollRef = createRef();

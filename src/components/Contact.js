@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { firestore } from '../firebase/firebase.config';
-import '../css/Contact.css';
+import { firestore } from '../server/firebase.config';
+import '../css/Contact.scss';
 
 const Contact = () => {
-
     const [ name, setName ] = useState('');
     const [ email, setEmail ] = useState('');
     const [ message, setMessage ] = useState('');

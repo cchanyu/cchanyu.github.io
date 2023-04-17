@@ -6,17 +6,19 @@
     top: 0;
     text-align: center;
     z-index: 50;
-}
 
-.navbar--inside {
-    display: flex;
-    flex-direction: row;
-
-    margin: 15px;
-    padding: 10px;
-
-    justify-content: space-between;
-    align-items: center;
+    .navbar {
+        &--inside {
+            display: flex;
+            flex-direction: row;
+        
+            margin: 15px;
+            padding: 10px;
+        
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
 }
 
 .navbar--text {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import '../css/Project.css';
+import '../css/Project.scss';
 
 const ProjectDetail = (props) => {
     const { content, toggle } = props;

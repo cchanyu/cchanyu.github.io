@@ -6,9 +6,9 @@
     border-radius: 5px;
     background-color: black;
     position: relative;
-}
 
-.resume-pane {
-    width: 100%;
-    object-fit: contain;
+    &-pane {
+        width: 100%;
+        object-fit: contain;
+    }
 }

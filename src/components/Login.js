@@ -1,5 +1,5 @@
 import React from 'react';
-import { auth } from "../firebase/firebase.config";
+import { auth } from "../server/firebase.config";
 import { getAuth, signOut, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import GoogleIcon from '../icon/google.svg';
 
